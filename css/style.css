@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container > h1 {
+    margin: 20px 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: rgb(112, 112, 112);
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 0 rgb(238, 238, 238), 2px 2px 0 rgb(112, 112, 112);
+}
+
+.container #taskInput {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container button {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    position: relative;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.container button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+}
+
+.container button:focus {
+    outline: 0;
+}
+
+.container #addTaskButton {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #3498DB;
+    border: none;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+}
+
+/*.container #counter {*/
+/*width: 25%;*/
+/*}*/
+
+.container #counter p {
+    font-size: 20px;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    border: none;
+    color: rgb(112, 112, 112);
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 0 rgb(238, 238, 238), 2px 2px 0 rgb(112, 112, 112);
+}
+
+.container #taskList h1 {
+    margin: 20px 0;
+}
+
+.container #taskList button {
+    margin: 0 5px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+}
+
+.container #taskList button:first-of-type {
+    background-color: #E74C3C;
+    border: none;
+    border-bottom: 5px solid #BD3E31;
+    text-shadow: 0px -2px #BD3E31;
+}
+
+.container #taskList button:last-of-type {
+    background-color: #82BF56;
+    border: none;
+    border-bottom: 5px solid #669644;
+    text-shadow: 0px -2px #669644;
+}
+
+.container #removeFinishedTasksButton {
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #F2CF66;
+    border: none;
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+}
+
+.done {
+    color: green;
+}
